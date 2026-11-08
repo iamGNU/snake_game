@@ -6,12 +6,12 @@ A classic Snake Game built using **Python** and the **Turtle Graphics** library.
 
 ## 🎮 Features
 
-* Classic Snake gameplay
-* Smooth movement using keyboard controls
-* Randomly spawning food
-* Score tracking
-* High score saved locally
-* Automatic game reset after collision
+* Classic Snake gameplay on a checkered board
+* Snake with a face and a body that shades darker towards the tail
+* Pulsing apple that never spawns on the snake
+* Start, pause and game-over screens
+* Arrow keys or WASD controls
+* Score and best score shown at the top; best score saved locally
 * Clean object-oriented Python code
 
 ---
@@ -24,6 +24,8 @@ snake_game/
 │── snake.py          # Snake class and movement logic
 │── food.py           # Food generation
 │── scoreboard.py     # Score and high score management
+│── ui.py             # Board, custom shapes and message overlays
+│── theme.py          # Colours, fonts and layout sizes
 │── Assets/           # Screenshots
 └── README.md
 ```
@@ -66,20 +68,22 @@ python main.py
 
 ## 🎯 Controls
 
-| Key | Action     |
-| --- | ---------- |
-| ↑   | Move Up    |
-| ↓   | Move Down  |
-| ←   | Move Left  |
-| →   | Move Right |
+| Key        | Action                          |
+| ---------- | ------------------------------- |
+| ↑ or W     | Move Up                         |
+| ↓ or S     | Move Down                       |
+| ← or A     | Move Left                       |
+| → or D     | Move Right                      |
+| Space      | Start / Pause / Resume / Replay |
 
 ---
 
 ## 🕹️ Gameplay
 
-* Eat the white food to increase your score.
-* Every food collected makes the snake grow longer.
-* Hitting the wall or your own tail resets the game.
+* Press Space to start.
+* Eat the apple to increase your score.
+* Every apple collected makes the snake grow longer.
+* Hitting the wall or your own tail ends the game. Press Space to play again.
 * Your highest score is saved to `data.txt` as soon as you beat it.
 * Food never spawns on top of the snake.
 
@@ -87,9 +91,9 @@ python main.py
 
 ## 📸 Screenshots
 
-| Start | Gameplay |
-| --- | --- |
-| ![Start screen](Assets/start-screen.png) | ![Gameplay](Assets/gameplay.png) |
+| Start | Gameplay | Game over |
+| --- | --- | --- |
+| ![Start screen](Assets/start-screen.png) | ![Gameplay](Assets/gameplay.png) | ![Game over](Assets/game-over.png) |
 
 ---
 
@@ -108,11 +112,8 @@ python main.py
 ## 🚀 Future Improvements
 
 * Sound effects
-* Pause and Resume feature
 * Difficulty levels
 * Obstacles
-* Start Menu
-* Better graphics and animations
 
 ---
 
