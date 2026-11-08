@@ -19,14 +19,16 @@ A classic Snake Game built using **Python** and the **Turtle Graphics** library.
 ## 📂 Project Structure
 
 ```
-Snake-Game/
+snake_game/
 │── main.py           # Main game loop
 │── snake.py          # Snake class and movement logic
 │── food.py           # Food generation
 │── scoreboard.py     # Score and high score management
-│── data.txt          # Stores the highest score
+│── Assets/           # Screenshots
 └── README.md
 ```
+
+The high score is saved to `data.txt`, which the game creates automatically next to `scoreboard.py`.
 
 ---
 
@@ -43,13 +45,13 @@ Snake-Game/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/snake-game.git
+git clone https://github.com/CodeCopAkash/snake_game.git
 ```
 
 2. Navigate to the project folder:
 
 ```bash
-cd snake-game
+cd snake_game
 ```
 
 3. Run the game:
@@ -78,17 +80,16 @@ python main.py
 * Eat the white food to increase your score.
 * Every food collected makes the snake grow longer.
 * Hitting the wall or your own tail resets the game.
-* Your highest score is automatically saved in `data.txt`.
+* Your highest score is saved to `data.txt` as soon as you beat it.
+* Food never spawns on top of the snake.
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-*Add a screenshot of your game here.*
-
-```
-assets/screenshot.png
-```
+| Start | Gameplay |
+| --- | --- |
+| ![Start screen](Assets/start-screen.png) | ![Gameplay](Assets/gameplay.png) |
 
 ---
 
